@@ -1,12 +1,8 @@
 import React from 'react';
-
 import picture from '../../assets/lines.jpg';
+import Project from '../Project';
 
-import me from '../../assets/me.jpg';
-
-
-
-const About = () => {
+export default function Port() {
   const sectionStyle = {
     backgroundImage: `url(${picture})`,
     backgroundSize: 'cover',
@@ -52,25 +48,12 @@ const About = () => {
   const paragraphStyle = {
     fontSize: '18px',
   };
-  
-
   return (
     <section style={sectionStyle}>
-      <div style={overlayStyle}></div>
-      <div style={containerStyle}>
-      <div style={textContainerStyle}>
-        <h1 style={headerStyle}>About Me</h1>
-        <p style={paragraphStyle}>
-          I am a statistics senior at USF with a minor in mathematics. I recently graduated from UCF's coding boot camp for full stack web development. I like sports, video games, and dogs.        </p>
-      </div>
-      <div style={imageContainerStyle}>
-        <div src= '../../assets/me.jpg'>
-          </div>
-      </div>
+        
+      <Project />
       
-    </div>
+      
     </section>
   );
 }
-
-export default About;
